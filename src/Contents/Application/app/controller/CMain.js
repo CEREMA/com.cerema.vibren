@@ -248,7 +248,7 @@ App.controller.define('CMain', {
         //Attribution d'un nom de voie pour chaque onglets
 		App.info.loading('Veuillez patienter...')
         var tabPanel = App.get('mainform tabpanel#chartTab');
-
+		console.log(selected);
         var currentAcquisition = selected.data.id;
         // On récupère les mesures liées à l'acquisition choisie et on initialise les onglets.
 
