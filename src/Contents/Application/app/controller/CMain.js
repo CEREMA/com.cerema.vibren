@@ -266,6 +266,7 @@ App.controller.define('CMain', {
             tab.setTitle("Voie " + nomVoie);
             me.initChart(records[index], tab, index + 1, function (returnedTab) {
                 tabPanel.add(returnedTab);
+				tabPanel.setActiveTab(returnedTab);
 				App.info.hide();
             });
 
