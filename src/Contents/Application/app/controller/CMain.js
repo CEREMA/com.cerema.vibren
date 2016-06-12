@@ -253,7 +253,7 @@ App.controller.define('CMain', {
 			var store=App.store.create({fields:["voie"],data:dtavoie});
 			App.get('mainform combo#voie').bindStore(store);
 			App.get('mainform combo#voie').getStore().load();
-			if (index==0) App.get('mainform combo#voie').setValue(index);
+			if (index==0) App.get('mainform combo#voie').setValue(index+1);
             tab = new Ext.Panel();
             var nomVoie = records[index].voie + 1;
             tab.setTitle("Voie " + nomVoie);
