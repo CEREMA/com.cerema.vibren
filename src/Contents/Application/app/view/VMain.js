@@ -91,6 +91,11 @@ App.view.define('VMain', {
 					text: "Fréquence", 
 					width: 150, 
 					dataIndex: "frequence_echantillonage"
+				},
+				{
+					text: "Voies", 
+					width: 150, 
+					dataIndex: "nombre_voies"
 				}
 				],
 				store: App.store.create('vibren://acquisitions', {
