@@ -257,8 +257,8 @@ App.controller.define('CMain', {
             tab = new Ext.Panel();
             var nomVoie = records[index].voie + 1;
             tab.setTitle("Voie " + nomVoie);
-			App.get('mainform combo#voie').on('select',function(me){
-				me.initChart(records[me.getValue()], tab, me.getValue(), function (returnedTab) {
+			App.get('mainform combo#voie').on('select',function(p){
+				me.initChart(records[p.getValue()], tab, p.getValue(), function (returnedTab) {
                 	tabPanel.add(returnedTab);
             	});				
 			});
