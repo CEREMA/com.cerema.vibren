@@ -235,6 +235,7 @@ App.controller.define('CMain', {
 
         var _p = this;
         _p.cleanAllTab();
+		alert(selected.data.id);
         _p.doTab(selected, 0, _p);
     },
 
