@@ -1,8 +1,8 @@
-# com.cerema.vibren
+# VIBREN 1.0
 
 ## com.cerema.vibren
 
-Package description goes here
+Projet VIBREN : Receuil et analyse des signaux vibratoires
 
 Copyright (c) 2015 By CEREMA
 
