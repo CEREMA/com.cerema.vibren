@@ -110,6 +110,21 @@ App.view.define('VMain', {
 						
 						return value.toMySQL();
 					}
+				},
+				{
+					text: "Début", 
+					width: 100, 
+					dataIndex: "debut_acquisition"
+				},
+				{
+					text: "Fin", 
+					width: 100, 
+					dataIndex: "fin_acquisition"
+				},
+				{
+					text: "Commentaires", 
+					flex: 1, 
+					dataIndex: "commentaire_acquisition"
 				}
 				],
 				store: App.store.create('vibren://acquisitions', {
