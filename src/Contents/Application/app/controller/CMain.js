@@ -32,7 +32,7 @@ App.controller.define('CMain', {
             },
 			"mainform combo#voie": {
 				select: function(p) {
-					var selected=App.get('mainform grid#acquisitionsGrid').getSelectionModel().getSelected();
+					var selected=App.get('mainform grid#acquisitionsGrid').getSelectionModel().getSelection();
 					this.doTab(selected, p.getValue()-1, this);		
 				}
 			}
