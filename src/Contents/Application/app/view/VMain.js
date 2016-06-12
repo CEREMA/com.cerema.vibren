@@ -76,11 +76,23 @@ App.view.define('VMain', {
 					itemId: "import"
 				}
 				],
-				columns: [{
+				columns: [
+				{
 					text: "Acquisitions", 
 					flex: 1, 
 					dataIndex: "label_acquisition"
-				}],
+				},
+				{
+					text: "Numéro", 
+					width: 50, 
+					dataIndex: "numero_acquisition"
+				},
+				{
+					text: "Fréquence", 
+					width: 150, 
+					dataIndex: "frequence_echantillonage"
+				}
+				],
 				store: App.store.create('vibren://acquisitions', {
 					autoLoad: true, 
 					storeId: "gridStore"
