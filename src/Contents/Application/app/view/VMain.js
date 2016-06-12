@@ -50,7 +50,7 @@ App.view.define('VMain', {
 			, itemId: "description"
 			, xtype: "textarea"
 			, width: "100%"
-		    , height: 95
+		    , height: 55
     }, {
 			layout: "vbox"
 			, width: "100%"
