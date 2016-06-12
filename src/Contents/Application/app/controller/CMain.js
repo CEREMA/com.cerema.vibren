@@ -235,7 +235,6 @@ App.controller.define('CMain', {
 
         var _p = this;
         _p.cleanAllTab();
-		alert(selected.data.id);
         _p.doTab(selected, 0, _p);
     },
 
@@ -249,14 +248,18 @@ App.controller.define('CMain', {
         App.Mesures.get(currentAcquisition, function (records) {
             // Affichage de la mesure courante
             console.log(index + " " + currentAcquisition + " " + records.length);
-            tab = new Ext.Panel()
+			var dtavoie=[];
+			for (var i=0;i<records.length;i++) dtavoie.push({voie:records[i]}); 
+			App.get('mainform combo#voie').getStore().loadData(dtavoie);
+			if (index==0) App.get('mainform combo#voie').setSelected(0);
+            tab = new Ext.Panel();
             var nomVoie = records[index].voie + 1;
             tab.setTitle("Voie " + nomVoie);
             me.initChart(records[index], tab, index + 1, function (returnedTab) {
                 tabPanel.add(returnedTab);
-                if (records[index + 1]) {
+                /*if (records[index + 1]) {
                     if (index<6) me.doTab(selected, index + 1, me); else return;
-                }
+                }*/
             });
 
         });
