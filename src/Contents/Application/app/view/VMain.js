@@ -101,14 +101,6 @@ App.view.define('VMain', {
 					text: "Points/Voie", 
 					width: 150, 
 					dataIndex: "nombre_points_voie"
-				},
-				{
-					text: "Date/heure", 
-					width: 150, 
-					dataIndex: "date_heure",
-					render: function(value) {
-						return value.toMySQL();
-					}
 				}
 				],
 				store: App.store.create('vibren://acquisitions', {
