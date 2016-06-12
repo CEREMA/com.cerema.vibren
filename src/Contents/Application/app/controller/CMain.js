@@ -240,6 +240,7 @@ App.controller.define('CMain', {
 
     doTab: function (selected, index, me) {
         //Attribution d'un nom de voie pour chaque onglets
+		App.info.loading('Veuillez patienter...')
         var tabPanel = App.get('mainform tabpanel#chartTab');
 
         var currentAcquisition = selected.data.id;
@@ -262,6 +263,7 @@ App.controller.define('CMain', {
 			});
             me.initChart(records[index], tab, index + 1, function (returnedTab) {
                 tabPanel.add(returnedTab);
+				App.info.hide();
             });
 
         });
