@@ -43,18 +43,19 @@ App.view.define('VMain', {
 			, itemId: "etude"
 			, xtype: "textfield"
 			, width: "100%"
+			, height: 25
     }, {
 			padding: 10
 			, fieldLabel: "Description"
 			, itemId: "description"
 			, xtype: "textarea"
 			, width: "100%"
+		    , height: 125
     }, {
 			layout: "vbox"
 			, width: "100%"
-			, height: "100%"
 			, flex: 1
-			, border: false
+			, border: true
 			, padding: 10
 			, items: [
         // Left menu
