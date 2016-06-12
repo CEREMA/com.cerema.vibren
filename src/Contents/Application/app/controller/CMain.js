@@ -249,9 +249,9 @@ App.controller.define('CMain', {
             // Affichage de la mesure courante
             console.log(index + " " + currentAcquisition + " " + records.length);
 			var dtavoie=[];
-			for (var i=0;i<records.length;i++) dtavoie.push({voie:records[i]}); 
+			for (var i=0;i<records.length;i++) dtavoie.push({voie:i+1}); 
 			App.get('mainform combo#voie').getStore().loadData(dtavoie);
-			if (index==0) App.get('mainform combo#voie').setSelected(0);
+			if (index==0) App.get('mainform combo#voie').setValue(index);
             tab = new Ext.Panel();
             var nomVoie = records[index].voie + 1;
             tab.setTitle("Voie " + nomVoie);
