@@ -79,7 +79,7 @@ App.view.define('VMain', {
 				columns: [
 				{
 					text: "Acquisitions", 
-					flex: 1, 
+					width: 100, 
 					dataIndex: "label_acquisition"
 				},
 				{
