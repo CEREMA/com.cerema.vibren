@@ -66,7 +66,7 @@ App.view.define('VMain', {
 			{
 				xtype: "grid", 
 				itemId: "acquisitionsGrid", 
-				height: 200, 
+				height: 180, 
 				width: "100%", 
 				selType: 'cellmodel', 
 				tbar: [
@@ -105,7 +105,10 @@ App.view.define('VMain', {
 				{
 					text: "Date/heure", 
 					width: 150, 
-					dataIndex: "date_heure"
+					dataIndex: "date_heure",
+					render: function(value) {
+						return value.toMySQL();
+					}
 				}
 				],
 				store: App.store.create('vibren://acquisitions', {
