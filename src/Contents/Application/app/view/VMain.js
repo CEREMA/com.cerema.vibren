@@ -94,8 +94,18 @@ App.view.define('VMain', {
 				},
 				{
 					text: "Voies", 
-					width: 150, 
+					width: 50, 
 					dataIndex: "nombre_voies"
+				},
+				{
+					text: "Points/Voie", 
+					width: 150, 
+					dataIndex: "nombre_points_voie"
+				},
+				{
+					text: "Date/heure", 
+					width: 150, 
+					dataIndex: "date_heure"
 				}
 				],
 				store: App.store.create('vibren://acquisitions', {
