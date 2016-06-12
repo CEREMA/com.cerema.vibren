@@ -1,0 +1,97 @@
+{
+    "namespace": "com.cerema.vibren",
+    "git": "https://github.com/CEREMA/com.cerema.vibren.git",
+    "title": "VIBREN",
+    "description": "Analyse et traitement des signaux vibratoires",
+    "platform": "desktop",
+    "targets": [
+        "webapp"
+    ],
+    "uid": "4cf8f4f4-b475-451e-a5c3-3ea40148cf83",
+    "version": "1.0.0",
+    "build": 1,
+    "copyright": "Copyright (c) 2015 By CEREMA",
+    "license": "BSD",
+    "author": {
+        "name": "Stéphane Zucatti",
+        "mail": "stephane.zucatti@cerema.fr",
+        "twitter": "@mydearsz",
+        "web": "",
+        "github": ""
+    },
+    "team": {
+        "debugger": [],
+        "tester": []
+    },
+    "langs": [
+        "en",
+        "fr"
+    ],
+    "frameworks": [
+        {
+            "name": "ext",
+            "version": "4.2.1",
+            "type": "desktop",
+            "theme": "classic",
+            "src": [
+                "http://cdn.sencha.com/ext/gpl/{version}/ext-all-debug.js"
+            ],
+            "res": [
+                "http://cdn.sencha.com/ext/gpl/{version}/resources/ext-theme-{theme}/ext-theme-{theme}-all.css"
+            ]
+        },
+        {
+            "name": "jquery",
+            "version": "2.1.3",
+            "src": "http://cdnjs.cloudflare.com/ajax/libs/jquery/{version}/jquery.js"
+        }
+    ],
+    "auth": [],
+    "paths": {},
+    "controllers": [
+        "CMain"
+    ],
+    "modules": [
+        "Ext.ux.upload"
+    ],
+    "plugins": [],
+    "db": [
+        "vibren"
+    ],
+    "api": [
+        "Etudes",
+        "Files",
+        "Acquisitions",
+        "Mesures",
+        "Etudes_listes",
+        "Signals",
+        "ChartsUtils"
+    ],
+    "tasks": [
+        {
+            "taskId": "calculate_mesures",
+            "api": "calculate"
+        }
+    ],
+    "packages": [
+        "binary-parser",
+        "buffer-reader",
+        "bufferpack",
+        "crypto",
+        "ml-fft",
+        "frequencyjs",
+        "cheerio"
+    ],
+    "icon": {
+        "background": "#FFFFFF",
+        "file": "app.png"
+    },
+    "splashscreen": {
+        "background": "#FFFFFF",
+        "color": "orange",
+        "file": "app.png"
+    },
+    "server": {
+        "port": 3000
+    }
+}

@@ -1,0 +1,159 @@
+files
+{
+	- (string) fileid
+	- (string) filename
+}
+
+etudes
+{
+	- (string) libelle
+	- (string) description
+}
+
+acquisition
+{
+	- (int) presence_acquisition
+	- (files) file
+	- (string) label_acquisition			
+	- (int) numero_acquisition
+	- (string) commentaire_acquisition
+	- (datetime) date_heure
+	- (int) debut_acquisition
+	- (int) fin_acquisition
+	- (int) frequence_echantillonage
+	- (int) nombre_points_voie
+	- (int) nombre_voies
+	- (string) unite_y_filtre_0
+	- (string) unite_y_filtre_1
+	- (string) unite_y_filtre_2
+	- (string) unite_y_filtre_3
+	- (string) unite_y_filtre_4
+	- (string) unite_y_integration_0
+	- (string) unite_y_integration_1
+	- (string) unite_y_integration_2
+	- (string) unite_y_integration_3
+	- (string) unite_y_integration_4
+	- (string) unite_y_derivation_0
+	- (string) unite_y_derivation_1
+	- (string) unite_y_derivation_2
+	- (string) unite_y_derivation_3
+	- (string) unite_y_derivation_4
+	- (string) unite_y_spectre_puissance_0
+	- (string) unite_y_spectre_puissance_1
+	- (string) unite_y_spectre_puissance_2
+	- (string) unite_y_spectre_puissance_3
+	- (string) unite_y_spectre_puissance_4
+	- (string) unite_y_fft_reels_0
+	- (string) unite_y_fft_reels_1
+	- (string) unite_y_fft_reels_2
+	- (string) unite_y_fft_reels_3
+	- (string) unite_y_fft_reels_4
+	- (string) unite_y_inv_fft_reels_0
+	- (string) unite_y_inv_fft_reels_1
+	- (string) unite_y_inv_fft_reels_2
+	- (string) unite_y_inv_fft_reels_3
+	- (string) unite_y_inv_fft_reels_4
+	- (int) presence_dispositif
+	- (string) label_chantier
+	- (int) numero_dispo
+	- (string) nom_chantier
+	- (int) nombre_capteurs
+	- (int) duree_acquisition
+	- (int) frequence_anti_repli
+	- (string) nom_capteur_0
+	- (string) nom_capteur_1
+	- (string) nom_capteur_2
+	- (string) nom_capteur_3
+	- (string) nom_capteur_4
+	- (string) type_capteur_0
+	- (string) type_capteur_1
+	- (string) type_capteur_2
+	- (string) type_capteur_3
+	- (string) type_capteur_4
+	- (string) unite_mesure_0
+	- (string) unite_mesure_1
+	- (string) unite_mesure_2
+	- (string) unite_mesure_3
+	- (string) unite_mesure_4
+	- (float) sensibilite_capteur_0
+	- (float) sensibilite_capteur_1
+	- (float) sensibilite_capteur_2
+	- (float) sensibilite_capteur_3
+	- (float) sensibilite_capteur_4
+	- (int) gain_capteur_0
+	- (int) gain_capteur_1
+	- (int) gain_capteur_2
+	- (int) gain_capteur_3
+	- (int) gain_capteur_4
+	- (float) unites_par_pas_00
+	- (float) unites_par_pas_01
+	- (float) unites_par_pas_02
+	- (float) unites_par_pas_03
+	- (float) unites_par_pas_04
+	- (float) unites_par_pas_05
+	- (float) unites_par_pas_06
+	- (float) unites_par_pas_07
+	- (float) unites_par_pas_08
+	- (float) unites_par_pas_09
+	- (float) unites_par_pas_10
+	- (float) unites_par_pas_11
+	- (float) unites_par_pas_12
+	- (float) unites_par_pas_13
+	- (float) unites_par_pas_14
+	- (int) type_acquisition
+	- (int) source_trigger
+	- (int) duree_trigger
+	- (int) seuil_trigger
+	- (int) source_visu
+}
+
+etudes_listes
+{
+	- (etudes) etude
+	- (acquisition) acquisition
+}
+
+signal
+{
+	- (files) file
+	- (acquisition) acquisition
+	- (int) presence_signal
+	- (int) numero_fichier
+	- (string) commentaire_traitement
+	- (string) trace_source
+	- (string) trace_sortie
+	- (int) nombre_voies
+	- (float) coefficient_multiplicateur_00
+	- (float) coefficient_multiplicateur_01
+	- (float) coefficient_multiplicateur_02
+	- (float) coefficient_multiplicateur_03
+	- (float) coefficient_multiplicateur_04
+	- (float) coefficient_multiplicateur_05
+	- (float) coefficient_multiplicateur_06
+	- (float) coefficient_multiplicateur_07
+	- (float) coefficient_multiplicateur_08
+	- (float) coefficient_multiplicateur_09
+	- (float) coefficient_multiplicateur_10
+	- (float) coefficient_multiplicateur_11
+	- (float) coefficient_multiplicateur_12
+	- (float) coefficient_multiplicateur_13
+	- (float) coefficient_multiplicateur_14
+	- (int) temps_debut
+	- (int) temps_fin
+	- (int) frequence_echantillonage
+	- (int) nombre_points_voie
+	- (string) unite_x
+	- (string) unite_y0
+	- (string) unite_y1
+	- (string) unite_y2
+	- (string) unite_y3
+	- (string) unite_y4	
+}
+
+mesures 
+{
+	- (acquisition) acquisition
+	- (signal) signal
+	- (int) voie
+	- (text) points
+}

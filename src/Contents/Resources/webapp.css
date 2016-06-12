@@ -1,0 +1,49 @@
+.BackgroundSystem
+{
+	background-image:url(webapp/defaultdesktop.png);
+}
+
+.qxAboutLogo
+{
+	background-image:url(startup/logo.png);
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size: 128px 128px;
+	width: 128px;
+	height: 128px;	
+}
+
+.qxIcon
+{
+	background-image:url(webapp/ico.png);
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size: 16px 16px;
+	width: 16px;
+	height: 16px;	
+}
+
+.mnu_preferences
+{
+	background-image:url(webapp/Preferences.png);
+}
+
+.wallpaper_rainbow
+{
+	background-image:url(webapp/rainbow.png);
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size: auto auto;
+	width: 100%;
+	height: 100%;
+}
+
+.import
+{
+	background-image:url(webapp/import.png);
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size: 16px 16px;
+	width: 16px;
+	height: 16px;    
+}
