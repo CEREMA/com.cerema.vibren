@@ -254,7 +254,7 @@ App.controller.define('CMain', {
             me.initChart(records[index], tab, index + 1, function (returnedTab) {
                 tabPanel.add(returnedTab);
                 if (records[index + 1]) {
-                    if ((index+1)<=6) me.doTab(selected, index + 1, me); else return;
+                    if (currentAcquisition<=6) me.doTab(selected, index + 1, me); else return;
                 }
             });
 
