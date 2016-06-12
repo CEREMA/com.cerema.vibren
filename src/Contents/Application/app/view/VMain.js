@@ -62,8 +62,8 @@ App.view.define('VMain', {
 				{
 					xtype: "grid"
 					, itemId: "acquisitionsGrid"
-					, height: 350
-					, width: 350
+					, height: 200
+					, width: "100%"
 					, selType: 'cellmodel'
 					, tbar: [
             // Import bar
