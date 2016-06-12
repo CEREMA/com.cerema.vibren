@@ -250,7 +250,9 @@ App.controller.define('CMain', {
             console.log(index + " " + currentAcquisition + " " + records.length);
 			var dtavoie=[];
 			for (var i=0;i<records.length;i++) dtavoie.push({voie:i+1}); 
-			App.get('mainform combo#voie').getStore().loadData(dtavoie);
+			var store=App.store.create({fields:[],data:dtavoie});
+			App.get('mainform combo#voie').bindStore(store);
+			App.get('mainform combo#voie').getStore().load();
 			if (index==0) App.get('mainform combo#voie').setValue(index);
             tab = new Ext.Panel();
             var nomVoie = records[index].voie + 1;
