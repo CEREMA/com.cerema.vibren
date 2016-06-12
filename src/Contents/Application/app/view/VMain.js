@@ -62,7 +62,7 @@ App.view.define('VMain', {
 				{
 					xtype: "grid"
 					, itemId: "acquisitionsGrid"
-					, height: "100%"
+					, height: 350
 					, width: 350
 					, selType: 'cellmodel'
 					, tbar: [
@@ -88,7 +88,7 @@ App.view.define('VMain', {
 			border: true
 			, flex: 1
 			, tabPosition: "top"
-			, height: "100%"
+			, width: "100%"
 			, xtype: 'tabpanel'
 			, itemId: 'chartTab'
 			, defaults: {
