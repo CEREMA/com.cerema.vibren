@@ -29,7 +29,13 @@ App.controller.define('CMain', {
             },
             "mainform grid#acquisitionsGrid": {
                 celldblclick: "doTabs"
-            }
+            },
+			"mainform combo#voie": {
+				select: function(p) {
+					var selected=App.get('mainform grid#acquisitionsGrid').getSelectionModel().getSelected();
+					this.doTab(selected, p.getValue()-1, this);		
+				}
+			}
         });
         App.init('VMain', this.onLoad);
 
@@ -262,10 +268,6 @@ App.controller.define('CMain', {
                 tabPanel.add(returnedTab);
 				App.info.hide();
             });
-			App.get('mainform combo#voie').on('select',function(p){
-				alert('x');
-				me.doTab(selected, p.getValue()-1, me);		
-			});
 
         });
     },
