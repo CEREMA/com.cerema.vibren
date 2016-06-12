@@ -258,10 +258,7 @@ App.controller.define('CMain', {
             var nomVoie = records[index].voie + 1;
             tab.setTitle("Voie " + nomVoie);
 			App.get('mainform combo#voie').on('select',function(p){
-				alert(p.getValue());
-				me.initChart(records[p.getValue()], tab, p.getValue(), function (returnedTab) {
-                	tabPanel.add(returnedTab);
-            	});				
+				me.doTab(selected, p.getValue(), me);		
 			});
             me.initChart(records[index], tab, index + 1, function (returnedTab) {
                 tabPanel.add(returnedTab);
