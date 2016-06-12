@@ -71,8 +71,8 @@ App.view.define('VMain', {
 				selType: 'cellmodel', 
 				tbar: [
 				{
-						text: "Importer", 
-						iconCls: "import", 
+					text: "Importer", 
+					iconCls: "import", 
 					itemId: "import"
 				}
 				],
@@ -81,7 +81,7 @@ App.view.define('VMain', {
 					flex: 1, 
 					dataIndex: "label_acquisition"
 				}],
-				store: App.store.create('App.Acquisitions.getAll', {
+				store: App.store.create('vibren://acquisitions', {
 					autoLoad: true, 
 					storeId: "gridStore"
 				})
