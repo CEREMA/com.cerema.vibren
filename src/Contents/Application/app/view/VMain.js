@@ -37,7 +37,6 @@ App.view.define('VMain', {
 		, itemId: "mainScreen"
 		, bodyStyle: "background-color: white"
 		, layout: "vbox"
-	    , height: "100%"
 		, items: [{
 			padding: 10
 			, fieldLabel: "Etude"
@@ -53,6 +52,7 @@ App.view.define('VMain', {
     }, {
 			layout: "vbox"
 			, width: "100%"
+			, height: "100%"
 			, flex: 1
 			, border: false
 			, padding: 10
