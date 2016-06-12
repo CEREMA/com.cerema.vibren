@@ -308,8 +308,10 @@ App.controller.define('CMain', {
         for (var i = 0; i < JOBS.length; i++) {
             if (JOBS[i].filename.indexOf('.SIG') > -1) myJOBS.push(JOBS[i]);
         };
+		App.info.loading('Veuillez patienter...')
         this.doJobs(myJOBS, 0, function (msg) {
             App.notify(msg);
+			App.info.hide();
             _p.refreshStoreAndTabs(_p, App.ID);
             App.get("TImport").close();
         });
