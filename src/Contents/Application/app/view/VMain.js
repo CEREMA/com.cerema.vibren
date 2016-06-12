@@ -139,6 +139,14 @@ App.view.define('VMain', {
 			width: "100%",
 			xtype: 'tabpanel',
 			itemId: 'chartTab',
+			tbar: [
+			{
+				xtype: "combo",
+				displayField: "voie",
+				valueField: "voie",
+				store: App.store.create({fields:["voie"],data:[]})
+			}
+			],
 			defaults: {
 				autoScroll: true,
 				bodyPadding: 10
