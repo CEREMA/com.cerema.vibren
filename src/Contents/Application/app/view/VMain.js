@@ -142,6 +142,7 @@ App.view.define('VMain', {
 			tbar: [
 			{
 				xtype: "combo",
+				padding: 4,
 				itemId: "voie",
 				displayField: "voie",
 				valueField: "voie",
