@@ -250,7 +250,7 @@ App.controller.define('CMain', {
             // Affichage de la mesure courante
             console.log(index + " " + currentAcquisition + " " + records.length);
 			var dtavoie=[];
-			for (var i=0;i<records.length;i++) dtavoie.push({voie:records[i]+1}); 
+			for (var i=0;i<records.length;i++) dtavoie.push({voie:i+1}); 
 			var store=App.store.create({fields:["voie"],data:dtavoie});
 			App.get('mainform combo#voie').bindStore(store);
 			App.get('mainform combo#voie').getStore().load();
