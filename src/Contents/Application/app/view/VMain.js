@@ -145,6 +145,7 @@ App.view.define('VMain', {
 				itemId: "voie",
 				displayField: "voie",
 				valueField: "voie",
+				editable: false,
 				store: App.store.create({fields:["voie"],data:[],autoLoad: true})
 			}
 			],
