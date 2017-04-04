@@ -3,7 +3,7 @@ Projet VIBREN : Recueil et Analyse des signaux vibratoires
 ## com.cerema.vibren
 Copyright (c) 2017 CEREMA
 ## History
-First commit
+First commit<br>
 03/03/2015 version 1.0
 ## Credits
 Author: [Stéphane ZUCATTI](mailto:stephane.zucatti@me.com)
